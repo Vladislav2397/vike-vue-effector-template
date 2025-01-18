@@ -15,7 +15,7 @@
         "format": "prettier --write ./src"
     },
     "keywords": [],
-    "author": "Vladislav",
+    "author": "Vladislav 'GlaDiatoR'",
     "dependencies": {
         "@universal-middleware/core": "^0.3.0",
         "@universal-middleware/express": "^0.3.3",

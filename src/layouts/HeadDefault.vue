@@ -7,5 +7,5 @@
 </template>
 
 <script lang="ts" setup>
-import logoUrl from '@assets/logo.svg'
+import logoUrl from '@/assets/logo.svg'
 </script>

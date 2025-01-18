@@ -12,11 +12,11 @@
         "noEmit": true,
         "moduleResolution": "Bundler",
         "paths": {
-            "@/*": [
+            "#/*": [
                 "./*"
             ],
-            "@assets/*": [
-                "./assets/*"
+            "@/*": [
+                "./src/*"
             ],
             "@components/*": [
                 "./src/components/*"
@@ -26,9 +26,6 @@
             ],
             "@services/*": [
                 "./services/*"
-            ],
-            "@styles/*": [
-                "./styles/*"
             ],
             "@utils/*": [
                 "./utils/*"

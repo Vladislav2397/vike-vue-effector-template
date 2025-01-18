@@ -19,8 +19,8 @@ export default defineConfig({
     ],
     resolve: {
         alias: {
-            '@': fileURLToPath(new URL('./src/', import.meta.url)),
-            '@assets': fileURLToPath(new URL('./assets', import.meta.url)),
+            '#': fileURLToPath(new URL('./', import.meta.url)),
+            '@': fileURLToPath(new URL('./src', import.meta.url)),
             '@components': fileURLToPath(
                 new URL('./src/components', import.meta.url)
             ),
@@ -28,7 +28,6 @@ export default defineConfig({
                 new URL('./src/layouts', import.meta.url)
             ),
             '@services': fileURLToPath(new URL('./services', import.meta.url)),
-            '@styles': fileURLToPath(new URL('./styles', import.meta.url)),
             '@utils': fileURLToPath(new URL('./utils', import.meta.url)),
         },
     },
