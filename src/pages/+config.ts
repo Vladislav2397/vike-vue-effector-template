@@ -24,6 +24,6 @@ export default {
     prerender: false,
 
     // <title>
-    title: 'My Vike App',
+    title: 'My Vike Vue Effector App',
     extends: config,
 } satisfies Config

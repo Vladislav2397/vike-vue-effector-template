@@ -19,12 +19,14 @@ export default defineConfig({
     ],
     resolve: {
         alias: {
-            '@': fileURLToPath(new URL('./', import.meta.url)),
+            '@': fileURLToPath(new URL('./src/', import.meta.url)),
             '@assets': fileURLToPath(new URL('./assets', import.meta.url)),
             '@components': fileURLToPath(
-                new URL('./components', import.meta.url)
+                new URL('./src/components', import.meta.url)
             ),
-            '@layouts': fileURLToPath(new URL('./layouts', import.meta.url)),
+            '@layouts': fileURLToPath(
+                new URL('./src/layouts', import.meta.url)
+            ),
             '@services': fileURLToPath(new URL('./services', import.meta.url)),
             '@styles': fileURLToPath(new URL('./styles', import.meta.url)),
             '@utils': fileURLToPath(new URL('./utils', import.meta.url)),

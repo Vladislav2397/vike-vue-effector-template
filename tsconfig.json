@@ -19,10 +19,10 @@
                 "./assets/*"
             ],
             "@components/*": [
-                "./components/*"
+                "./src/components/*"
             ],
             "@layouts/*": [
-                "./layouts/*"
+                "./src/layouts/*"
             ],
             "@services/*": [
                 "./services/*"
@@ -44,7 +44,7 @@
             "vite/client"
         ],
         "jsx": "preserve",
-        "jsxImportSource": "vue"
+        "jsxImportSource": "vue",
     },
     "exclude": [
         "dist"
