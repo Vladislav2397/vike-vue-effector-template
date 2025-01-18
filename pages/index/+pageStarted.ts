@@ -1,15 +1,15 @@
-import { sample } from 'effector';
+import {sample} from 'effector'
 
-import { createPageStart } from '@utils/effector';
+import {createPageStart} from '@utils/effector'
 
-import { service } from './model';
+import {service} from './model'
 
-export const pageStarted = createPageStart();
+export const pageStarted = createPageStart()
 
 sample({
-  clock: pageStarted,
-  source: service.$counterClient,
-  filter: (val) => !val,
-  fn: () => Math.round(Math.random() * 1000),
-  target: service.$counterClient,
-});
+    clock: pageStarted,
+    source: service.$counterClient,
+    filter: val => !val,
+    fn: () => Math.round(Math.random() * 1000),
+    target: service.$counterClient,
+})

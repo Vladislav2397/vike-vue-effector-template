@@ -1,5 +1,5 @@
 const config = {
-  prerender: true,
-};
+    prerender: true,
+}
 
-export default config;
+export default config

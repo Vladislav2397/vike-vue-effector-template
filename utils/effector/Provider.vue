@@ -1,11 +1,11 @@
 <template><slot /></template>
 
 <script lang="ts" setup>
-import { usePageContext } from 'vike-vue/usePageContext';
+import {usePageContext} from 'vike-vue/usePageContext'
 
-import { provideScope } from './useScope';
+import {provideScope} from './useScope'
 
-const { scopeValues } = usePageContext();
+const {scopeValues} = usePageContext()
 
-provideScope(scopeValues);
+provideScope(scopeValues)
 </script>

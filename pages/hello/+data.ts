@@ -1,10 +1,10 @@
 // https://vike.dev/data
-export { data };
-export type Data = Awaited<ReturnType<typeof data>>;
+export {data}
+export type Data = Awaited<ReturnType<typeof data>>
 
-import type { PageContextServer } from 'vike/types';
+import type {PageContextServer} from 'vike/types'
 
 const data = async (pageContext: PageContextServer) => {
-  const { name } = pageContext.routeParams;
-  return { name, date: new Date().toLocaleString() };
-};
+    const {name} = pageContext.routeParams
+    return {name, date: new Date().toLocaleString()}
+}
