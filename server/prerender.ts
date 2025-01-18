@@ -1,10 +1,12 @@
-import { prerender } from 'vike/prerender';
+import {prerender} from 'vike/prerender'
 
-(async () => {
-  try {
-    await prerender();
-  } catch (e) {
-    console.log(e);
-    return e;
-  }
-})();
+async function prerenderFunction() {
+    try {
+        await prerender()
+    } catch (e) {
+        console.log(e)
+        return e
+    }
+}
+
+prerenderFunction()

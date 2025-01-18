@@ -1,19 +1,24 @@
 /// <reference lib="webworker" />
-import { renderPage } from 'vike/server';
+import {renderPage} from 'vike/server'
 
-import type { Get, UniversalHandler } from '@universal-middleware/core';
+import type {Get, UniversalHandler} from '@universal-middleware/core'
 
-export const vikeHandler: Get<[], UniversalHandler> = () => async (request, context) => {
-  const pageContextInit = { ...context, urlOriginal: request.url, headersOriginal: request.headers };
-  const pageContext = await renderPage(pageContextInit);
-  const response = pageContext.httpResponse;
+export const vikeHandler: Get<[], UniversalHandler> =
+    () => async (request, context) => {
+        const pageContextInit = {
+            ...context,
+            urlOriginal: request.url,
+            headersOriginal: request.headers,
+        }
+        const pageContext = await renderPage(pageContextInit)
+        const response = pageContext.httpResponse
 
-  const { readable, writable } = new TransformStream();
+        const {readable, writable} = new TransformStream()
 
-  response?.pipe(writable);
+        response?.pipe(writable)
 
-  return new Response(readable, {
-    status: response?.statusCode,
-    headers: response?.headers,
-  });
-};
+        return new Response(readable, {
+            status: response?.statusCode,
+            headers: response?.headers,
+        })
+    }
