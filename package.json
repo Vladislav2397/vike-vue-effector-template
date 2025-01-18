@@ -1,0 +1,47 @@
+{
+  "name": "vike-vue-effector",
+  "version": "0.0.1",
+  "description": "Vike+Vue+Effector",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx ./express-entry.ts",
+    "build": "vite build",
+    "start": "npm run build && cross-env NODE_ENV=production tsx ./express-entry.ts",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "@universal-middleware/core": "^0.3.0",
+    "@universal-middleware/express": "^0.3.3",
+    "@vue/compiler-sfc": "^3.5.13",
+    "@vue/server-renderer": "^3.5.13",
+    "cross-fetch": "^4.1.0",
+    "effector": "^23.2.3",
+    "express": "^5.0.1",
+    "patronum": "^2.3.0",
+    "telefunc": "^0.1.83",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@types/express": "^5.0.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/language-server": "^2.2.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.2",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-vue": "^9.32.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0",
+    "unplugin-vue-markdown": "^28.0.0",
+    "vike": "^0.4.217",
+    "vike-vue": "^0.8.6",
+    "vite": "^6.0.7",
+    "vue-eslint-parser": "^9.4.3"
+  }
+}
